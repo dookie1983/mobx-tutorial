@@ -29,12 +29,17 @@ autorun(() => {
 
 state.setName("ko", "dookie");
 
-//class Profile {
-//    @observable firstName;
-//    @observable lastName;
-//    @observable age;
-//}
+class Profile {
+    @observable firstName = "";
+    @observable lastName = "";
+    @observable age = "";
+}
 
+let profile = observable({
+    firstName: "",
+    lastName: "",
+    age: ""
+})
 //window.state = state;
 //state.name = "koko";
 //state.name = "koko dookie";
